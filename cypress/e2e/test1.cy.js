@@ -11,6 +11,6 @@ describe('Pierwszy test', () => {
     //Polecnie znalezienia przycisku w prawym górnym rogu i otworzenie menu
     cy.get('#open-navigation-menu-mobile').click();
     //Polecenie znalezienia i wciśnięcia przycisku **Log out**
-    cy.get(':nth-child(12) > .next-bve2vl').click();
+    cy.get(":nth-child(12) > .next-bve2vl").scrollIntoView().click();
   });
 });
